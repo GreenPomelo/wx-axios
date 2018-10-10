@@ -1,6 +1,6 @@
 {
   "name": "wx-axios",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Promise based HTTP client for the browser/node.js/wechat miniprogram ",
   "main": "index.js",
   "scripts": {
