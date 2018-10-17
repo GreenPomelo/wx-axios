@@ -1448,8 +1448,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
-	var buildURL = __webpack_require__(6);
+	"use strict";
+	const buildURL = __webpack_require__(6);
 	
 	module.exports = function wxAdapter(config) {
 	  return new Promise(function dispatchWxRequest(resolve, reject) {
@@ -1462,8 +1462,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      url: url,
 	      method: config.method.toUpperCase(),
 	      data: data,
-	      headers: headers,
+	      header: headers,
 	      success: function(res) {
+	        res.config = config;
 	        resolve(res);
 	      },
 	      fail: function() {
